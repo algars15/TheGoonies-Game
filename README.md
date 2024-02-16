@@ -1,4 +1,4 @@
-### TheGoonies Game
+# TheGoonies Game
  Project developed by Tartaria Games
 
 TODO: Write a project description
