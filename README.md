@@ -1,4 +1,4 @@
-# TheGoonies Game
+# The Goonies Game
 
 This is a project for the arcade game 'The Goonies' created by Tartaria Games. 
 ## Installation
