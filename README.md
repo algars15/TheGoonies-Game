@@ -1,2 +1,2 @@
 # TheGoonies Game
- Project developed by students of 1r
+ Project developed by Tartaria Games
