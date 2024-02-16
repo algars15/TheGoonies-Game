@@ -1,7 +1,6 @@
 # TheGoonies Game
- Project developed by Tartaria Games 1234
 
-TODO: Write a project description
+This is a project for the arcade game 'The Goonies' created by Tartaria Games. 
 ## Installation
 TODO: Describe the installation process
 ## Usage
