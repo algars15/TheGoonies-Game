@@ -14,6 +14,8 @@ TODO: Write usage instructions
 ## History
 TODO: Write history
 ## Credits
-TODO: Write credits
+TARTARIA GAMES TEAM
+Martí Mira Vázquez  (@miraaa_2005)
+Manel Montes Lucas  (@cai128)
 ## License
 TODO: Write license
