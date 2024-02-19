@@ -7,16 +7,6 @@ TODO: Describe the installation process
 TODO: Write usage instructions
 ## Contributing
 
-#include <stdio.h>
-#include <iostream>
-using namespace std;
-
-int main(){
-
-cout<<"Hello world"
-
-}
-
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
