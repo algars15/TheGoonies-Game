@@ -25,7 +25,6 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-https://www.youtube.com/watch?v=dhnk_WbSx1k
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
