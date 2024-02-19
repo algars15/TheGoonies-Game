@@ -11,7 +11,7 @@ TODO: Write usage instructions
 #include <iostream>
 using namespace std;
 
-int main(){
+
 
 cout<<"Hello world"
 
