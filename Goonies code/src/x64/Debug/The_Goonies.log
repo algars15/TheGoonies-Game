@@ -1,0 +1,22 @@
+﻿  Game.cpp
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(27,20): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(27,20): error C2143: error de sintaxis: falta ';' delante de '*'
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(27,36): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(30,21): error C3646: 'target': especificador de invalidación desconocido
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(30,27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(31,15): error C3646: 'src': especificador de invalidación desconocido
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(31,18): error C2059: error de sintaxis: ','
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(31,23): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\ResourceManager.h(3,10): fatal error C1083: No se puede abrir el archivo incluir: 'raylib.h': No such file or directory
+  main.cpp
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(27,20): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(27,20): error C2143: error de sintaxis: falta ';' delante de '*'
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(27,36): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(30,21): error C3646: 'target': especificador de invalidación desconocido
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(30,27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(31,15): error C3646: 'src': especificador de invalidación desconocido
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(31,18): error C2059: error de sintaxis: ','
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\Game.h(31,23): error C2238: símbolos (token) inesperados delante de ';'
+  ResourceManager.cpp
+C:\Users\marti\OneDrive\Imatges\Escriptori\Goonies code\src\ResourceManager.h(3,10): fatal error C1083: No se puede abrir el archivo incluir: 'raylib.h': No such file or directory
+  Generando código...

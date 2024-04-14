@@ -1,0 +1,16 @@
+﻿  AABB.cpp
+  Entity.cpp
+  Game.cpp
+  Globals.cpp
+  main.cpp
+  Object.cpp
+  Player.cpp
+  RenderComponent.cpp
+  ResorceManager.cpp
+  Scene.cpp
+  Sprite.cpp
+  StaticImage.cpp
+  TileMap.cpp
+  Generando código...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo main sin resolver al que se hace referencia en la función "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\marti\source\repos\The_Goonies\x64\Debug\The_Goonies.exe : fatal error LNK1120: 1 externos sin resolver
