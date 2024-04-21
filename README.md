@@ -58,3 +58,5 @@ Martí Mira Vázquez  (@miraaa_2005)
 Manel Montes Lucas  (@cai128)
 ## License
 
+[MIT](https://choosealicense.com/licenses/mit/)
+
