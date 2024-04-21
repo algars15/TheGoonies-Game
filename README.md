@@ -1,5 +1,5 @@
 # The Goonies 
-The Goonies is a recreation of the original game The Goonies for MSX, made it for educational purposes.
+The Goonies is a recreation of the original game "[The Goonies](https://www.youtube.com/watch?v=yhFCiZIcjgE)" for MSX, made it for educational purposes.
 
 
 
