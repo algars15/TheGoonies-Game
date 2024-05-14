@@ -13,13 +13,13 @@ The Goonies is a recreation of the original game [The Goonies](https://www.youtu
  -    Arrow Right Move Rigt
  -    Arrow Down Move Down on Vine
  -    Space Attack
- -    T Use Time Clock
+   
 
 ### God Mode
 
 -  G Activate God Mode, becomes invulnerable and gets all perks
--  S Go to next scene
--  F Save a friend of the current scene
+-  With de numbers you can go any scene you want 
+
 
 ## Contributing
 - There are five scenes of three screens each. Each one is a different color, the yellow one is vertical.
@@ -41,13 +41,14 @@ The Goonies is a recreation of the original game [The Goonies](https://www.youtu
     - Boots of Mobility: You move twice as fast.
     - Time clock: pressing the T key stops the time 10 seconds.
 - Pressing the G key activates God Mode, you are invulnerable and gives a key, mobility boots and a magic watch. Pressing G again disables the invulnerability.
-- If you have God Mode activated by pressing S you go to the next scene.
+- If you have God Mode activated by pressing the numbers you go to the scene you want.
 - If you have God Mode activated by pressing F you rescue all friends in the scene automatically.
+- If you have God Mode activated by pressing W you instantly win.
+- If you have God Mode activated by pressing L you instantly lose.
 - There is a main menu with the credits, if you press the spacebar the instructions come out and the game starts.
 - There is a screen in case of Game Over and in case the game is passed to you.
 - There are sounds for all interactions and a background soundtrack.
 
-## History
 
 
 ## Credits
