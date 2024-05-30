@@ -14,7 +14,7 @@ struct Animation
 class Sprite : public RenderComponent
 {
 public:
-    Sprite(const Texture2D *texture);
+    Sprite(const Texture2D* texture);
     ~Sprite();
 
     void SetNumberAnimations(int num);
@@ -25,7 +25,7 @@ public:
 
     void SetManualMode();
     void SetAutomaticMode();
-    
+
     void Update();
     void NextFrame();
     void PrevFrame();
@@ -40,9 +40,8 @@ private:
     int current_frame;
     int current_delay;
 
-    const Texture2D *img;
+    const Texture2D* img;
     std::vector<Animation> animations;
 
     AnimMode mode;
 };
-

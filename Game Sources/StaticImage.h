@@ -15,4 +15,3 @@ private:
     Rectangle rc;
     const Texture2D* img;
 };
-

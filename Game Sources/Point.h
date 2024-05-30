@@ -35,7 +35,7 @@ public:
     }
 
     //Compound assignment operators
-	Point& operator=(const Point& p) {
+    Point& operator=(const Point& p) {
         x = p.x;
         y = p.y;
         return *this;

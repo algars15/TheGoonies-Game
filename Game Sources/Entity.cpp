@@ -3,51 +3,8 @@
 #include <cmath>
 #include "Globals.h"
 
-
-//class Enemy {
-//public:
-//    Vector2 position;
-//    float speed;
-//    bool movingRight;
-//    Texture2D sprite;
-//
-//    Enemy(const char* spritePath, Vector2 startPosition, float movementSpeed)
-//        : position(startPosition), speed(movementSpeed), movingRight(true) {
-//        sprite = LoadTexture(spritePath);
-//    }
-//
-//    ~Enemy() {
-//        UnloadTexture(sprite);
-//    }
-//
-//    void Update(float deltaTime, int screenWidth) {
-//        if (movingRight) {
-//            position.x += speed * deltaTime;
-//            if (position.x >= screenWidth - sprite.width) {
-//                movingRight = false;
-//            }
-//        }
-//        else {
-//            position.x -= speed * deltaTime;
-//            if (position.x <= 0) {
-//                movingRight = true;
-//            }
-//        }
-//    }
-//
-//    void Draw() {
-//        DrawTextureV(sprite, position, WHITE);
-//    }
-//}; //CLASS ENEMY?
-
-
-Entity::Entity(const Point& p, int w, int h) : pos(p), dir({ 0,0 }), width(w), height(h), frame_width(w), frame_height(h), render(nullptr)
-{
-}
-Entity::Entity(const Point& p, int w, int h, int frame_w, int frame_h) : pos(p), dir({ 0,0 }), width(w), height(h), frame_width(frame_w), frame_height(frame_h), render(nullptr)
-{
-}
-
+Entity::Entity(const Point& p, int w, int h) : pos(p), dir({ 0,0 }), width(w), height(h), frame_width(w), frame_height(h), render(nullptr){}
+Entity::Entity(const Point& p, int w, int h, int frame_w, int frame_h) : pos(p), dir({ 0,0 }), width(w), height(h), frame_width(frame_w), frame_height(frame_h), render(nullptr){}
 Entity::~Entity()
 {
 	if (render != nullptr)
@@ -70,11 +27,12 @@ AABB Entity::GetHitbox() const
 	AABB hitbox(p, width, height);
 	return hitbox;
 }
+
 Point Entity::GetRenderingPosition() const
 {
 	Point p;
 	p.x = pos.x + width / 2 - frame_width / 2;
-	p.y = pos.y - (frame_height-1);
+	p.y = pos.y - (frame_height - 1);
 	return p;
 }
 void Entity::Draw() const
@@ -92,14 +50,45 @@ void Entity::DrawHitbox(const Color& col) const
 	Color c = col;
 	c.a = 128;		//50% transparent
 
-	render->DrawBox(pos.x, pos.y-(height-1), width, height, c);
-	render->DrawCorners(pos.x, pos.y-(height-1), width, height);
+	render->DrawBox(pos.x, pos.y - (height - 1), width, height, c);
+	render->DrawCorners(pos.x, pos.y - (height - 1), width, height);
 }
 void Entity::DrawHitbox(int x, int y, int w, int h, const Color& col) const
 {
 	Color c = col;
 	c.a = 128;		//50% transparent
 
-	render->DrawBox(x, y-(h-1), w, h, c);
-	render->DrawCorners(x, y-(h-1), w, h);
+	render->DrawBox(x, y - (h - 1), w, h, c);
+	render->DrawCorners(x, y - (h - 1), w, h);
+}
+
+bool Entity::NextLevel() const
+{
+	if (pos.x >= 254)
+	{
+		return true;
+	}
+	return false;
+}
+bool Entity::PrevLevel() const
+{
+	if (pos.x < 6) {
+		return true;
+	}
+	return false;
+}
+bool Entity::NextLevelY() const
+{
+	if (pos.y >= 196)
+	{
+		return true;
+	}
+	return false;
+}
+bool Entity::PrevLevelY() const
+{
+	if (pos.y < 23) {
+		return true;
+	}
+	return false;
 }

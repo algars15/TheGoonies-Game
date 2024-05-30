@@ -20,7 +20,7 @@ AppStatus ResourceManager::LoadTexture(Resource id, const std::string& file_path
         LOG("Failed to load texture ", file_path);
         return AppStatus::ERROR;
     }
-    
+
     //Insert the loaded texture into the map with the specified key
     textures[id] = texture;
     return AppStatus::OK;

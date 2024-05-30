@@ -6,8 +6,8 @@
 #define PLAYER_FRAME_SIZE		16
 
 //Logical model size: 12x28
-#define PLAYER_PHYSICAL_WIDTH	6
-#define PLAYER_PHYSICAL_HEIGHT	14
+#define PLAYER_PHYSICAL_WIDTH	12
+#define PLAYER_PHYSICAL_HEIGHT	16
 
 //Horizontal speed and vertical speed while falling down
 #define PLAYER_SPEED			1
@@ -16,29 +16,22 @@
 #define PLAYER_LADDER_SPEED		1
 
 //Frame animation delay while on a ladder
-#define ANIM_LADDER_DELAY		(3*ANIM_DELAY)
+#define ANIM_LADDER_DELAY		(2*ANIM_DELAY)
 
 //When jumping, initial jump speed and maximum falling speed
-#define PLAYER_JUMP_FORCE		5
+#define PLAYER_JUMP_FORCE		6
 
 //Frame delay for updating the jump velocity
-#define PLAYER_JUMP_DELAY		2
+#define PLAYER_JUMP_DELAY		3.5f
 
 //Player is levitating when abs(speed) <= this value
-#define PLAYER_LEVITATING_SPEED	3
+#define PLAYER_LEVITATING_SPEED	4
 
 //Gravity affects jumping velocity when jump_delay is 0
 #define GRAVITY_FORCE			1
 
-//Damage of the player punch
-#define PUNCH_DAMAGE			30
-
-//PLAYER HEALTH
-
-#define PLAYER_HEALTH			100
-
 //Logic states
-enum class State { IDLE, WALKING, JUMPING, FALLING, CLIMBING, PUNCH };
+enum class State { IDLE, WALKING, JUMPING, FALLING, CLIMBING, DEAD, ATTACKING };
 enum class Look { RIGHT, LEFT };
 
 //Rendering states
@@ -48,33 +41,44 @@ enum class PlayerAnim {
 	JUMPING_LEFT, JUMPING_RIGHT,
 	LEVITATING_LEFT, LEVITATING_RIGHT,
 	FALLING_LEFT, FALLING_RIGHT,
-	CLIMBING, PUNCH_LEFT, FINISH_PUNCH_L, PUNCH_RIGHT, FINISH_PUNCH_R,
-	NUM_ANIMATIONS,
-	
+	CLIMBING, CLIMBING_PRE_TOP, CLIMBING_TOP,
+	SHOCK_LEFT, SHOCK_RIGHT,
+	TELEPORT_LEFT, TELEPORT_RIGHT,
+	ATTACK_LEFT, ATTACK_RIGHT,
+	NUM_ANIMATIONS
 };
 
-class Player: public Entity
+class Player : public Entity
 {
 public:
 	Player(const Point& p, State s, Look view);
 	~Player();
-	
+
 	AppStatus Initialise();
 	void SetTileMap(TileMap* tilemap);
 
-	void Vida();
-	void DecrVida(int v);
-	int GetVida();
+
 
 	void InitScore();
 	void IncrScore(int n);
 	int GetScore();
+	void setKey(bool data);
+	bool HasKey();
+	void setSkullDoor(bool data);
+	bool HasSkullDoor();
+	void InitLives();
+	void DecrLives();
+	void IncrLives(int n);
+	int GetLives();
+	void InitExp();
+	void IncrExp(int n);
+	int GetExp();
 
 	void Update();
 	void DrawDebug(const Color& col) const;
 	void Release();
 
-private:
+
 	bool IsLookingRight() const;
 	bool IsLookingLeft() const;
 
@@ -84,6 +88,7 @@ private:
 	void LogicJumping();
 	void LogicClimbing();
 
+	void LogicAttack();
 	//Animation management
 	void SetAnimation(int id);
 	PlayerAnim GetAnimation();
@@ -94,14 +99,13 @@ private:
 	void StartJumping();
 	void StartClimbingUp();
 	void StartClimbingDown();
+	void StartAttack();
+	AABB GetAttackHitbox() const;
+
 	void ChangeAnimRight();
 	void ChangeAnimLeft();
-	void PunchingLeft();
-	void PunchingRight();
+	State GetState();
 
-	
-
-	  
 
 	//Jump steps
 	bool IsAscending() const;
@@ -112,14 +116,24 @@ private:
 	bool IsInFirstHalfTile() const;
 	bool IsInSecondHalfTile() const;
 
+
+
 	State state;
 	Look look;
 	int jump_delay;
+	int attackDuration;
 
-	TileMap *map;
+	TileMap* map;
 
 	int score;
-	int vida;
-	int EXP;
-};
+	int lives;
+	int exp;
 
+	bool hasKey = false;
+
+	bool SkullDoor = false;
+
+	AABB attackBox;
+
+	Sound sfxJump, sfxAttack;
+};

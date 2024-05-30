@@ -6,6 +6,9 @@
 //Function return values
 enum class AppStatus { OK = 0, ERROR, QUIT };
 
+//Game states
+enum class GameState { STAR_MENU, MAIN_MENU, PLAYING, SETTINGS, CREDITS, YOU_WIN, YOU_LOSE };
+
 //Main return values
 #define EXIT_SUCCESS	0
 #define EXIT_FAILURE	1
@@ -15,17 +18,14 @@ enum class AppStatus { OK = 0, ERROR, QUIT };
 void log(const char file[], int line, const char* text, ...);
 
 //Window size
-#define WINDOW_WIDTH    256
-#define WINDOW_HEIGHT   212
+#define WINDOW_WIDTH    272
+#define WINDOW_HEIGHT   224
 
 //Game constants
-#define MARGIN_GUI_Y	28
+#define MARGIN_GUI_Y	0
 #define TILE_SIZE		8
-#define LEVEL_WIDTH		32
-#define LEVEL_HEIGHT	23
+#define LEVEL_WIDTH		34
+#define LEVEL_HEIGHT	28
 
 //Entities animation delay
-#define ANIM_DELAY		4
-
-//Sound
-#define NUM_MUSIC       4
+#define ANIM_DELAY		8

@@ -2,7 +2,9 @@
 #include "Globals.h"
 #include "Scene.h"
 
-enum class GameState { CREDITS, MENU, MENU_START, PLAYING, WIN, LOSE };
+
+
+
 
 class Game
 {
@@ -14,6 +16,7 @@ public:
     AppStatus Update();
     void Render();
     void Cleanup();
+    Music musicStage1, musicStage2, musicStart_Menu, musicWin, musicLose;
 
 private:
     AppStatus BeginPlay();
@@ -23,12 +26,11 @@ private:
     void UnloadResources();
 
     GameState state;
-    Scene *scene;
-    const Texture2D *img_menu, *img_menu_start, *img_credits, *img_win, *img_lose;
-
-    Music music[NUM_MUSIC];
+    Scene* scene;
+    const Texture2D* img_menu, * img_start_menu, * img_win, * img_lose;
 
     //To work with original game units and then scale the result
     RenderTexture2D target;
     Rectangle src, dst;
+    
 };

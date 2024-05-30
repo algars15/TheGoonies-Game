@@ -1,6 +1,6 @@
 #include "Sprite.h"
 
-Sprite::Sprite(const Texture2D *texture)
+Sprite::Sprite(const Texture2D* texture)
 {
     img = texture;
     current_anim = -1;
@@ -82,7 +82,7 @@ void Sprite::NextFrame()
             current_frame %= animations[current_anim].frames.size();
             current_delay = animations[current_anim].delay;
         }
-    }   
+    }
 }
 void Sprite::PrevFrame()
 {

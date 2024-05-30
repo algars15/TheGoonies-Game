@@ -6,15 +6,15 @@
 #include <string>
 
 enum class Resource {
+    IMG_START_MENU,
     IMG_MENU,
-    IMG_MENU_START,
-    IMG_CREDITS,
-    IMG_PLAYER, 
+    IMG_PLAYER,
     IMG_ENEMY,
     IMG_TILES,
+    IMG_TILES_2,
     IMG_ITEMS,
-    IMG_WIN,
-    IMG_LOSE
+    IMG_YOU_WIN,
+    IMG_YOU_LOSE
 };
 
 class ResourceManager {
@@ -29,7 +29,6 @@ public:
     //Load and unload texture
     AppStatus LoadTexture(Resource id, const std::string& file_path);
     void ReleaseTexture(Resource id);
-
 
     //Get texture by key
     const Texture2D* GetTexture(Resource id) const;
