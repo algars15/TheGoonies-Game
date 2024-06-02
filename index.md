@@ -3,11 +3,10 @@
 
 ## About the game
 
-Gunbird was released in 1994 for arcades and belongs to the vertically scrolling shoot'em up genre and has both single-player and two-player cooperative modes.
+"The Goonies" was created and published by Konami, a prominent Japanese video game company, in 1986.
+This adaptation of the classic adventure film was developed for various platforms of the time, including the MSX and NES. This game is an adventure and platform game where players take on the role of Mikey, the leader of a group of children called the Goonies. 
 
-The game allows you to choose between five different characters, each one with their own skills and powers. The objective of the game is to obtain the four shards  of a magic mirror in order to get a wish once they are all assembled. They will fight against The Trump (a group of three pirates) for the fragments of the mirror.
-
-There are two loop with seven levels each. The four shards of the mirror are obtained in the first four levels (which are randomly selected) and the wish is made once the player has completed three extra levels. In the end of each level you’ll have one boss to beat and a piece of the main plot is revealed. But in the second loop the difficult is increased and the story plot is removed.
+The objective is to find the lost treasure of the pirate One-Eyed Willy to save their home from demolition.
 
 ## Gameplay
 
