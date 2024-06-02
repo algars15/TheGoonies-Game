@@ -46,8 +46,11 @@ The objective is to find the lost treasure of the pirate One-Eyed Willy to save 
 
 ## Team members
 
+![Marti](https://github.com/algars15/TheGoonies-Game/assets/160216136/d9dea60b-a698-459a-8ccd-ce8a953d0173)
   Martí Mira Vázquez (@miraaa_2005)
 
+
+![160216293](https://github.com/algars15/TheGoonies-Game/assets/160216136/c345f548-a6d1-4d23-9ea9-1fe32bb431b4)
   Manel Montes Lucas (@cai128)
 
   Design/Code
