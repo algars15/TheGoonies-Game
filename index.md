@@ -10,7 +10,7 @@ The objective is to find the lost treasure of the pirate One-Eyed Willy to save 
 
 ## Gameplay
 
-<iframe width="740" height="590" src="https://youtu.be/6O3b1lGK5a8" frameborder="0" allowfullscreen></iframe>
+VIDEO [HERE](https://youtu.be/6O3b1lGK5a8)
 
 ## Controls
 ~~~~~~~~~~~~~~~
