@@ -48,9 +48,10 @@ F3 Lose Screen
 
 Martí Mira Vázquez (@miraaa_2005)
 
+Manel Montes Lucas (@cai128)
+
 Design/Code
 Github: algars15
-Manel Montes Lucas (@cai128)
 
 Design/Code
 Github: Cai128
