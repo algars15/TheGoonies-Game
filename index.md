@@ -56,11 +56,10 @@ Design/Code
 Github: Cai128
 
 
-### For more information see our wiki page [HERE](https://github.com/Wilhelman/Gunbird_P01/wiki)
-### Download the last version of the game [HERE](https://github.com/Wilhelman/Gunbird_P01/releases/tag/v1.0)
-### Check our Github repository [HERE](https://github.com/Wilhelman/Gunbird_P01)
+### For more information see our wiki page [HERE](https://github.com/algars15/TheGoonies-Game/wiki)
+### Check our Github repository [HERE](https://github.com/algars15/TheGoonies-Game)
 
 
 
 
-#### _Tribute by FrozenSloth Studios_
+#### _Tribute by TartariaGames Studio_
