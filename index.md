@@ -16,38 +16,30 @@ There are two loop with seven levels each. The four shards of the mirror are obt
 ## Controls
 ~~~~~~~~~~~~~~~
 
-Keyboard Player 1 controls:
-- UP: W key
-- LEFT / MOVE SELECTOR LEFT: A key
-- RIGHT / MOVE SELECTOR RIGHT:: D key
-- DOWN: S key
-- BASIC SHOT: SPACE key
-- SELECT CHARACTER: SPACE key 
-- BOMB: B key
+Arrows to move and jump
+To attack use SPACE
 
-Keyboard Player 2 controls:
-- UP: UP_ARROW key
-- LEFT / MOVE SELECTOR LEFT: LEFT_ARROW key
-- RIGHT / MOVE SELECTOR RIGHT:: RIGHT_ARROW key
-- DOWN: DOWN_ARROW key
-- BASIC SHOT: 1 key (NUMPAD)
-- JOIN THE GAME: 2 key (NUMPAD)
-- JOIN THE GAME (in-game): 1 key (NUMPAD)
-- SELECT CHARACTER: 1 key (NUMPAD)
-- BOMB: 2 key (NUMPAD)
+F1 Debug mode
+Press 1 = Stage.1
+Press 2 = Stage.2
+Press 3 = Stage.3
+Press 4 = Stage.4
+Press 5 = Stage.5
+Press 6 = Stage.6
+Press 7 = Stage.7
+Press 8 = Stage.8
+Press 9 = Stage.9
+Press 0 = Stage.10
+Press q = Stage.11
+Press w = Stage.12
+Press e = Stage.13
+Press r = Stage.14
+Press t = Stage.15
+Press y = Stage.16
+Press u = Stage.17
+F2 Win Screen
 
-General controls:
-- SKIP SCREEN: SPACE key
-- EXIT GAME: ESC key
-
-Gamepad:
-
-- MOVE: JOYSTIC AND D-PAD
-- SHOOT AND SELECT CHARACTER: A 
-- SKIP SCREEN: A
-- BOMB: B
-- START GAME: START
-- EXIT GAME: BACK
+F3 Lose Screen
 
 
 ~~~~~~~~~~~~~~~
