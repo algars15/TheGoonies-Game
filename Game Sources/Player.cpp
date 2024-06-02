@@ -30,7 +30,7 @@ AppStatus Player::Initialise()
 	const int n = PLAYER_FRAME_SIZE;
 
 	ResourceManager& data = ResourceManager::Instance();
-	if (data.LoadTexture(Resource::IMG_PLAYER, "images/Player.png") != AppStatus::OK)
+	if (data.LoadTexture(Resource::IMG_PLAYER, "images/PLAYER_SPRITES.png") != AppStatus::OK)
 	{
 		return AppStatus::ERROR;
 	}
@@ -120,13 +120,13 @@ bool Player::HasKey()
 		return false;
 	}
 }
-void Player::setSkullDoor(bool data)
+void Player::puerta(bool data)
 {
-	SkullDoor = data;
+	Puerta_c = data;
 }
-bool Player::HasSkullDoor()
+bool Player::TePorta()
 {
-	if (SkullDoor == true)
+	if (Puerta_c == true)
 	{
 		return true;
 	}
@@ -416,7 +416,7 @@ void Player::MoveY()
 					StartClimbingUp();
 				else if (map->TestOnDoor(box, &pos.x))
 				{
-					setSkullDoor(true);
+					puerta(true);
 				}
 				else 
 				{

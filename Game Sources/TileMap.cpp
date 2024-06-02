@@ -31,28 +31,30 @@ void TileMap::InitTileDictionary()
 {
 	const int n = TILE_SIZE;
 
-	dict_rect[(int)Tile::BLOCK_WITHOUT_L] = { 0,  0, n, n };
-	dict_rect[(int)Tile::BLOCK_WITHOUT_R] = { 1 * n ,0, n, n };
-	dict_rect[(int)Tile::BLOCK_WITH_L_UP] = { 4 * n, 4 * n, n, n };
-	dict_rect[(int)Tile::BLOCK_WITH_R_UP] = { 3 * n, 4 * n, n, n };
+
+	//Tile map marro
+	dict_rect[(int)Tile::STONE] = { 0,  0, n, n };
+	dict_rect[(int)Tile::STONE_2] = { 1 * n ,0, n, n };
+	dict_rect[(int)Tile::GROUND] = { 4 * n, 4 * n, n, n };
+	dict_rect[(int)Tile::GROUND_2] = { 3 * n, 4 * n, n, n };
 	dict_rect[(int)Tile::BLOCK_WITH_L_DOWN] = { 5 * n, 5 * n, n, n };
 	dict_rect[(int)Tile::BLOCK_WITH_R_DOWN] = { 4 * n, 5 * n, n, n };
 	dict_rect[(int)Tile::STONE_WITHOUT_1] = { 2 * n,  1 * n, n, n };
 	dict_rect[(int)Tile::STONE_WITHOUT_2] = { 0,  2 * n, n, n };
 	dict_rect[(int)Tile::STONE_WITHOUT_3] = { 1 * n, 2 * n, n, n };
 	dict_rect[(int)Tile::STONE_WITHOUT_4] = { 1 * n, 2 * n, -n, n };
-	dict_rect[(int)Tile::STONE_WITH_1_UP] = { 2 * n, 4 * n, n, n };
-	dict_rect[(int)Tile::STONE_WITH_1_DOWN] = { 2 * n, 5 * n, n, n };
-	dict_rect[(int)Tile::STONE_WITH_3_UP] = { 1 * n ,  4 * n, n, n };
-	dict_rect[(int)Tile::STONE_WITH_3_DOWN] = { 1 * n, 5 * n, n, n };
-	dict_rect[(int)Tile::STONE_WITH_4_UP] = { 1 * n, 4 * n, -n, n };
-	dict_rect[(int)Tile::STONE_WITH_4_DOWN] = { 1 * n, 5 * n, -n, n };
-	dict_rect[(int)Tile::STONE_WITH_2_UP] = { 0, 4 * n, n, n };
-	dict_rect[(int)Tile::STONE_WITH_2_DOWN] = { 0, 5 * n, n, n };
-	dict_rect[(int)Tile::STONE_WITH_5_UP] = { 9 * n, 0, n, n };
-	dict_rect[(int)Tile::STONE_WITH_5_DOWN] = { 9 * n, 1 * n, n, n };
-	dict_rect[(int)Tile::STONE_WITH_6_UP] = { 10 * n, 0, n, n };
-	dict_rect[(int)Tile::STONE_WITH_6_DOWN] = { 10 * n, 1 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_1] = { 2 * n, 4 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_2] = { 2 * n, 5 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_3] = { 1 * n ,  4 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_4] = { 1 * n, 5 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_5] = { 1 * n, 4 * n, -n, n };
+	dict_rect[(int)Tile::STONE_WITH_6] = { 1 * n, 5 * n, -n, n };
+	dict_rect[(int)Tile::STONE_WITH_7] = { 0, 4 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_8] = { 0, 5 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_9] = { 9 * n, 0, n, n };
+	dict_rect[(int)Tile::STONE_WITH_10] = { 9 * n, 1 * n, n, n };
+	dict_rect[(int)Tile::STONE_WITH_11] = { 10 * n, 0, n, n };
+	dict_rect[(int)Tile::STONE_WITH_12] = { 10 * n, 1 * n, n, n };
 	dict_rect[(int)Tile::TROPICAL_BLOCK_L] = { 2 * n, 2 * n, n, n };
 	dict_rect[(int)Tile::TROPICAL_BLOCK_R] = { 3 * n, 2 * n, n, n };
 
@@ -91,6 +93,16 @@ void TileMap::InitTileDictionary()
 	dict_rect[(int)Tile::DOOR_BOTTOM_RIGHT] = { 8 * n, 7 * n, n, n };
 
 
+	dict_rect[(int)Tile::GREEN_DOOR_TOP_LEFT] = { 9 * n, 5 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_MID_LEFT] = { 9 * n, 6 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_BOTTOM_LEFT] = { 9 * n, 7 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_TOP_MID] = { 10 * n, 5 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_MID_MID] = { 10 * n, 6 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_BOTTOM_MID] = { 10 * n, 7 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_TOP_RIGHT] = { 11 * n, 5 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_MID_RIGHT] = { 11 * n, 6 * n, n, n };
+	dict_rect[(int)Tile::GREEN_DOOR_BOTTOM_RIGHT] = { 11 * n, 7 * n, n, n };
+
 
 	dict_rect[(int)Tile::WATER_L] = { 0, 3 * n, n, n };
 	dict_rect[(int)Tile::WATER_R] = { 1 * n, 3 * n, n, n };
@@ -98,12 +110,25 @@ void TileMap::InitTileDictionary()
 	dict_rect[(int)Tile::LAVA_R] = { 3 * n, 3 * n, n, n };
 
 	dict_rect[(int)Tile::BLANCO] = { 0, 6 * n, n, n };
-	dict_rect[(int)Tile::V] = { 9 * n, 2 * n, n, n };
-	dict_rect[(int)Tile::I] = { 10 * n,2 * n, n, n };
-	dict_rect[(int)Tile::T] = { 11 * n, 2 * n, n, n };
-	dict_rect[(int)Tile::E] = { 9 * n, 3 * n, n, n };
-	dict_rect[(int)Tile::X] = { 10 * n,3 * n, n, n };
-	dict_rect[(int)Tile::P] = { 11 * n, 3 * n, n, n };
+	dict_rect[(int)Tile::V_VIDA] = { 9 * n, 2 * n, n, n };
+	dict_rect[(int)Tile::I_VIDA] = { 10 * n,2 * n, n, n };
+	dict_rect[(int)Tile::T_VIDA] = { 11 * n, 2 * n, n, n };
+	dict_rect[(int)Tile::E_EXPERIENCIA] = { 9 * n, 3 * n, n, n };
+	dict_rect[(int)Tile::X_EXPERIENCIA] = { 10 * n,3 * n, n, n };
+	dict_rect[(int)Tile::P_EXPERIENCIA] = { 11 * n, 3 * n, n, n };
+
+	//ORANGE_C_TL, ORANGE_C_TM, ORANGE_C_TR, ORANGE_C_BL, ORANGE_C_BR, ORANGE_C_ML, ORANGE_C_MR,
+
+	dict_rect[(int)Tile::ORANGE_C_TL] = {  9 * n,  8 * n, n, n };
+	dict_rect[(int)Tile::ORANGE_C_TM] = { 10 * n,  8 * n, n, n };
+	dict_rect[(int)Tile::ORANGE_C_TR] = { 11 * n,  8 * n, n, n };
+	dict_rect[(int)Tile::ORANGE_C_BL] = {  9 * n, 10 * n, n, n };
+	dict_rect[(int)Tile::ORANGE_C_BR] = { 11 * n, 10 * n, n, n };
+	dict_rect[(int)Tile::ORANGE_C_ML] = {  9 * n,  9 * n, n, n };
+	dict_rect[(int)Tile::ORANGE_C_MR] = { 11 * n,  9 * n, n, n };
+
+
+	//Tile map lila
 	dict_rect[(int)Tile::PRIMERA_COLUMNA_SIN_LEFT] = { 19 * n, 0, n, n };
 	dict_rect[(int)Tile::SEGUNDA_COLUMNA_SIN_LEFT] = { 19 * n, 1 * n, n, n };
 	dict_rect[(int)Tile::TERCERA_COLUMNA_SIN_LEFT] = { 19 * n, 2 * n, n, n };
@@ -138,6 +163,7 @@ void TileMap::InitTileDictionary()
 	dict_rect[(int)Tile::SEGUNDA_ROCA_ABAJO] = { 17 * n, 1 * n, n, n };
 
 
+	//Tile map verda
 	dict_rect[(int)Tile::PRIMERA_ROCA_ARRIBA_VERDE] = { 22 * n, 2 * n, n, n };
 	dict_rect[(int)Tile::PRIMERA_ROCA_ABAJO_VERDE] = { 22 * n, 3 * n, n, n };
 	dict_rect[(int)Tile::SEGUNDA_ROCA_ARRIBA_VERDE] = { 23 * n, 2 * n, n, n };
@@ -176,7 +202,7 @@ AppStatus TileMap::Initialise()
 {
 	ResourceManager& data = ResourceManager::Instance();
 
-	if (data.LoadTexture(Resource::IMG_TILES, "images/tileset.png") != AppStatus::OK)
+	if (data.LoadTexture(Resource::IMG_TILES, "images/TILESET.png") != AppStatus::OK)
 	{
 		return AppStatus::ERROR;
 	}

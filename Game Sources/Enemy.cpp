@@ -34,9 +34,9 @@ AppStatus Enemy::Initialize()
     }
 
     Sprite* sprite = dynamic_cast<Sprite*>(render);
-    sprite->SetNumberAnimations(2); 
+    sprite->SetNumberAnimations(2); // Solo dos animaciones: WALKING_LEFT y WALKING_RIGHT
 
-    sprite->SetAnimationDelay((int)EnemyAnim::WALKING_LEFT, ANIM_DELAY);  
+    sprite->SetAnimationDelay((int)EnemyAnim::WALKING_LEFT, ANIM_DELAY);
     for (i = 0; i < 2; ++i)
         sprite->AddKeyFrame((int)EnemyAnim::WALKING_LEFT, { (float)i * n, 0, n, n });
 
@@ -44,7 +44,7 @@ AppStatus Enemy::Initialize()
     for (i = 0; i < 2; ++i)
         sprite->AddKeyFrame((int)EnemyAnim::WALKING_RIGHT, { (float)i * n, 0, -n, n });
 
-    sprite->SetAnimation((int)EnemyAnim::WALKING_LEFT); //Start animation walking left
+    sprite->SetAnimation((int)EnemyAnim::WALKING_LEFT); // Inicia con la animación de caminar hacia la izquierda
 
     return AppStatus::OK;
 }
@@ -87,29 +87,30 @@ void Enemy::Move()
     AABB box;
     int prev_x = pos.x;
 
-    
-    if (state == EnemyState::WALKING_LEFT){   
-        pos.x += -ENEMY_SPEED; 
+    // Si el enemigo está caminando hacia la izquierda
+    if (state == EnemyState::WALKING_LEFT)
+    {
+        pos.x += -ENEMY_SPEED; // Mueve al enemigo hacia la izquierda
         box = GetHitbox();
         SetAnimation((int)EnemyAnim::WALKING_LEFT);
-       
+        // Verifica si hay colisión con la pared izquierda
         if (map->TestCollisionWallLeft(box))
         {
-            pos.x = prev_x;
-            state = EnemyState::WALKING_RIGHT; 
+            pos.x = prev_x; // Restaura la posición anterior
+            state = EnemyState::WALKING_RIGHT; // Cambia al estado de caminar hacia la derecha
         }
     }
- 
+    // Si el enemigo está caminando hacia la derecha
     else if (state == EnemyState::WALKING_RIGHT)
     {
-        pos.x += ENEMY_SPEED; 
+        pos.x += ENEMY_SPEED; // Mueve al enemigo hacia la derecha
         box = GetHitbox();
         SetAnimation((int)EnemyAnim::WALKING_RIGHT);
-       
+        // Verifica si hay colisión con la pared derecha
         if (map->TestCollisionWallRight(box))
         {
-            pos.x = prev_x; 
-            state = EnemyState::WALKING_LEFT; 
+            pos.x = prev_x; // Restaura la posición anterior
+            state = EnemyState::WALKING_LEFT; // Cambia al estado de caminar hacia la izquierda
         }
     }
 }

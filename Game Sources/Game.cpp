@@ -49,7 +49,7 @@ AppStatus Game::Initialise(float scale)
 
     //Initialise window
     InitWindow((int)w, (int)h, "The Goonies");
-
+    ToggleFullscreen();
 
     //Render texture initialisation, used to hold the rendering result so we can easily resize it
     target = LoadRenderTexture(WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -90,22 +90,22 @@ AppStatus Game::LoadResources()
 {
     ResourceManager& data = ResourceManager::Instance();
 
-    if (data.LoadTexture(Resource::IMG_MENU, "images/menu.png") != AppStatus::OK)
+    if (data.LoadTexture(Resource::IMG_MENU, "images/MENU.png") != AppStatus::OK)
     {
         return AppStatus::ERROR;
     }
     img_menu = data.GetTexture(Resource::IMG_MENU);
-    if (data.LoadTexture(Resource::IMG_START_MENU, "images/Credits.png") != AppStatus::OK)
+    if (data.LoadTexture(Resource::IMG_START_MENU, "images/CREDITS.png") != AppStatus::OK)
     {
         return AppStatus::ERROR;
     }
     img_start_menu = data.GetTexture(Resource::IMG_START_MENU);
-    if (data.LoadTexture(Resource::IMG_YOU_WIN, "images/YOU_WIN.png") != AppStatus::OK)
+    if (data.LoadTexture(Resource::IMG_YOU_WIN, "images/WIN_SCREEN.png") != AppStatus::OK)
     {
         return AppStatus::ERROR;
     }
     img_win = data.GetTexture(Resource::IMG_YOU_WIN);
-    if (data.LoadTexture(Resource::IMG_YOU_LOSE, "images/GAME_OVER.png") != AppStatus::OK)
+    if (data.LoadTexture(Resource::IMG_YOU_LOSE, "images/GAME_OVER_SCREEN.png") != AppStatus::OK)
     {
         return AppStatus::ERROR;
     }

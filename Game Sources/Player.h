@@ -64,8 +64,8 @@ public:
 	int GetScore();
 	void setKey(bool data);
 	bool HasKey();
-	void setSkullDoor(bool data);
-	bool HasSkullDoor();
+	void puerta(bool data);
+	bool TePorta();
 	void InitLives();
 	void DecrLives();
 	void IncrLives(int n);
@@ -131,7 +131,7 @@ public:
 
 	bool hasKey = false;
 
-	bool SkullDoor = false;
+	bool Puerta_c = false;
 
 	AABB attackBox;
 
