@@ -44,32 +44,16 @@ F3 Lose Screen
 
 ~~~~~~~~~~~~~~~
 
-# FrozenSloth Studios - Our team
-
-![](frozenSlothStudios_team.JPG)
-
 ## Team members
 
-_Altimira Bernat, Martí's responsability and Github account_
+Martí Mira Vázquez (@miraaa_2005)
 
-* QA
-* [Github account](https://github.com/martimab)
+Design/Code
+Github: algars15
+Manel Montes Lucas (@cai128)
 
-_García Subirana, Guillermo's responsability and Github account_
-
-* Code
-* [Github account](https://github.com/Wilhelman)
-
-_Masó Garcia, Víctor's responsability and Github account_
-
-* Management
-* [Github account](https://github.com/nintervik)
-
-_Termens Vázquez, Ariadna's responsability and Github account_
-
-* Art/Design
-* [Github account](https://github.com/AriTeva)
-
+Design/Code
+Github: Cai128
 
 
 ### For more information see our wiki page [HERE](https://github.com/Wilhelman/Gunbird_P01/wiki)
